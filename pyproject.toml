@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling","telnetlib3","asyncio","getpass"]
 build-backend = "hatchling.build"
 
 [project]
 name = "PyVLC"
-version = "0.0.1"
+version = "1.0.0"
 authors = [
   { name="Harshit Bhardwaj", email="htg4920@gmail.com" },
 ]
