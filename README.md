@@ -1,6 +1,6 @@
 # API is under constant development for adding/improvising further features and improvements
 
-Current API Version: 1.0.1
+Current API Version: 1.0.1 [PyPI](https://pypi.org/project/PyVLC/)
 
 Current API functions:
 
@@ -11,6 +11,9 @@ Current API functions:
 * `is_alive()`: Returns True if the connection is alive else False
 
 # USAGE:
+
+## Either: `pip install PyVLC` or `pip3 install PyVLC`
+## Or: Download the latest release zip/tar.gz
 
 The library works asynchronously hence you will need to explicitly import `asyncio` (`import asyncio`) for asynchronous functioning and call the object functions with async/await syntax.
 
