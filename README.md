@@ -1,4 +1,6 @@
-# API under development
+# API is under constant development for adding/improvising further features and improvements
+
+Current API Version: 1.0.1
 
 Current API functions:
 
@@ -7,6 +9,31 @@ Current API functions:
 * `disconnect()`: Disconnects from VLC
 * `shutdown()`: Ends the connection and shuts down VLC
 * `is_alive()`: Returns True if the connection is alive else False
+
+# USAGE:
+
+The library works asynchronously hence you will need to explicitly import `asyncio` (`import asyncio`) for asynchronous functioning and call the object functions with async/await syntax.
+
+Example:
+
+```Python3
+from PyVLC.PyVLC import PyVLC
+import asyncio
+
+VLC = PyVLC()
+async def runner():
+    await VLC.connect()
+    while True:
+        com = input("VLC> ")
+        if com == "quit" or com == "exit":
+            await VLC.disconnect()
+            break
+        await VLC.send(com)
+
+if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(runner())
+```
 
 # LICENSING:
 

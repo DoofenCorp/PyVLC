@@ -1,1 +1,3 @@
-from . import pyvlc
+from PyVLC import PyVLC
+
+__all__ = ["PyVLC"]

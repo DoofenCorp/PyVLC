@@ -2,7 +2,7 @@ import telnetlib3
 import asyncio
 from getpass import getpass
 
-class pyvlc:
+class PyVLC:
     def __init__(self, host="localhost", port=4212):
         self.host = host
         self.port = port
