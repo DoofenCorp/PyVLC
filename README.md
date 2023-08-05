@@ -9,6 +9,7 @@ Current API functions:
 * `disconnect()`: Disconnects from VLC
 * `shutdown()`: Ends the connection and shuts down VLC
 * `is_alive()`: Returns True if the connection is alive else False
+* `list_commands()`: Lists supported commands that can be executed by VLC
 
 # USAGE:
 
